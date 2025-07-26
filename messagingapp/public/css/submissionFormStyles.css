@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 150%;
+}
+
+body {
+    position: relative;
+
+}
+
+main {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 30px;
+    margin: 0 50px;
+    justify-content: center;
+    height: 50%;
+}
+
+form {
+    color: #0c0000;
+    background: #fffdfd;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-flow: column wrap;
+
+}
+
+form input:focus {
+    background: #b4a5a5;
+    transform: scale(1.02);
+}
+
+form label {
+    display: ruby-base-container;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 0px;
+}
+
+form input[type="submit"] {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    /* width: fit-content; */
+    /* align-self: center; */
+}
+
+.input-control.error input,
+.input-control.error textarea {
+    border: 2px red solid;
+
+}
+
+.input-control.success input,
+.input-control.success textarea {
+    border: 2px green solid;
+
+}
+
+
+.errorMsg {
+    margin-bottom: 10px;
+    color: red;
+}
+
+form input[type="submit"]:hover {
+    background: #555;
+}
+
+.successful {
+    margin-top: 10px;
+    display: none;
+    color: green;
+    text-align: center;
+}
+
+
+
+.navigation-list-container {
+    background-color: rgb(73, 9, 212);
+    opacity: 8;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+
+
+}
+
+.navigation-list {
+    display: flex;
+    gap: 10%;
+    flex-grow: 1;
+
+}
+
+.navigation-list-item {
+
+
+    list-style-type: none;
+    margin-left: 20px;
+    display: flex;
+    align-content: center;
+    height: 50px;
+    /* flex-grow: 1; */
+}
+
+.navigation-list-item:hover {
+    background: #000000;
+    transform: scale(1.1);
+
+}
+
+.nav-link-item {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    display: block;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+
+}
+
+
+footer {
+    background-color: beige;
+    height: 50px;
+    width: 100%;
+    align-content: center;
+    position: absolute;
+
+    bottom: 0;
+}

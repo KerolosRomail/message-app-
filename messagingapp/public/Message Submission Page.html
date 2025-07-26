@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messaging Website - Submit a Message</title>
+    <link rel="stylesheet" href="css/submissionFormStyles.css">
+    <script src="./js/messageSubmissionPage.js" defer></script>
+</head>
+
+<body style="background-color: rgb(5, 5, 5)">
+    <div class="navigation-list-container">
+        <ul class="navigation-list" style="font-size: 20px;">
+            <li class="navigation-list-item"><a href="Index Page.html" class="nav-link-item">Home</a></li>
+            <li class="navigation-list-item"><a href="Message Submission Page.html" class="nav-link-item">Submit a
+                    Message</a></li>
+            <li class="navigation-list-item"><a href="view" class="nav-link-item">View Messages</a>
+            </li>
+        </ul>
+    </div>
+
+    <main>
+        <header>
+            <h1 style="text-align: center; color: rgb(247, 38, 219);">Submit a Message</h1>
+        </header>
+        <B>
+            <p
+                style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 20px;color: #fff;">
+                To submit a message, please fill out the form below with the required information: your name, email, and
+                the message you wish to send.</p>
+        </B> 
+        <form id="form" method="post" action="/submit">
+            <div class="input-control">
+                <label style="font-size: 20px;" for="title">Title:</label>
+                <input type="text" id="title" name="title">
+                <div class="errorMsg"></div>
+            </div>
+            <div class="input-control">
+                <label style="font-size: 20px;" for="email">Email:</label>
+                <input type="text" id="email" name="email">
+                <div class="errorMsg"></div>
+            </div>
+            <div class="input-control">
+                <label style="font-size: 20px;" for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+                <div class="errorMsg"></div>
+            </div>
+
+            <input style="font-size: 20px; padding: 10px;" type="submit" value="Submit">
+            <div class="successful">Message submitted, thanks</div>
+        </form>
+
+    </main>
+    <footer>
+        <p style="text-align: center;">&copy; 2025 Messaging Website @ kero</p>
+    </footer>
+</body>
+
+</html>
